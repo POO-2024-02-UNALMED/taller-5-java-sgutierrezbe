@@ -16,6 +16,14 @@ public class Animal {
     private String genero;
     private Zona[] zonas;
 
+    public Animal() {
+        this.nombre = null;
+        this.edad = 0;
+        this.habitad = null;
+        this.genero = null;
+        totalAnimales++;
+    }
+
     public Animal(String nombre, int edad, String habitad, String genero) {
         this.nombre = nombre;
         this.edad = edad;
@@ -82,13 +90,6 @@ public class Animal {
 
     @Override
     public String toString() {
-        String base = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitad + " y mi genero es " + genero;
-        if (zonas != null && zonas.length > 0) {
-            Zona zona = zonas[0]; // Asumimos que el animal está en la primera zona de la lista
-            if (zona != null) {
-                base += ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre() + ".";
-            }
-        }
-        return base;
+        return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitad + " y mi genero es " + genero;
     }
 }

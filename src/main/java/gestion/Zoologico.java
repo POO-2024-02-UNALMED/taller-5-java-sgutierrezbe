@@ -8,6 +8,12 @@ public class Zoologico {
     private String ubicacion;
     private List<Zona> zonas;
 
+    public Zoologico() {
+        this.nombre = null;
+        this.ubicacion = null;
+        this.zonas = new ArrayList<>();
+    }
+
     public Zoologico(String nombre, String ubicacion) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
@@ -52,6 +58,6 @@ public class Zoologico {
     }
 
     public List<Zona> getZona() {
-        return this.zonas;
+        return zonas;
     }
 }
