@@ -9,6 +9,10 @@ public class Reptil extends Animal {
     private String colorEscamas;
     private double largoCola;
 
+    public Reptil() {
+        super("", 0, "", "");
+    }
+
     public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, double largoCola) {
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;

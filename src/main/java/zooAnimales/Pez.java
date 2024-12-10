@@ -9,6 +9,10 @@ public class Pez extends Animal {
     private String colorEscamas;
     private int cantidadAletas;
 
+    public Pez() {
+        super("", 0, "", "");
+    }
+
     public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;

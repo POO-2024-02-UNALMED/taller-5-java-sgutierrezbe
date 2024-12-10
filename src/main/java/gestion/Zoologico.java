@@ -46,4 +46,12 @@ public class Zoologico {
     public List<Zona> getZonas() {
         return zonas;
     }
+
+    public void agregarZonas(Zona zona) {
+        this.zonas.add(zona);
+    }
+
+    public List<Zona> getZona() {
+        return this.zonas;
+    }
 }
