@@ -10,7 +10,9 @@ public class Pez extends Animal {
     private int cantidadAletas;
 
     public Pez() {
-        super("", 0, "", "");
+        super();
+        listado.add(this);
+        totalPeces++;
     }
 
     public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {

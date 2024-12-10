@@ -7,13 +7,15 @@ public class Reptil extends Animal {
     public static int iguanas = 0;
     public static int serpientes = 0;
     private String colorEscamas;
-    private double largoCola;
+    private int largoCola;
 
     public Reptil() {
-        super("", 0, "", "");
+        super();
+        listado.add(this);
+        totalReptiles++;
     }
 
-    public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, double largoCola) {
+    public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
@@ -32,12 +34,12 @@ public class Reptil extends Animal {
 
     public static Reptil crearIguana(String nombre, int edad, String genero) {
         iguanas++;
-        return new Reptil(nombre, edad, "humedal", genero, "verde", 3.0);
+        return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
     }
 
     public static Reptil crearSerpiente(String nombre, int edad, String genero) {
         serpientes++;
-        return new Reptil(nombre, edad, "jungla", genero, "blanco", 1.0);
+        return new Reptil(nombre, edad, "jungla", genero, "marrón", 1);
     }
 
     public String getColorEscamas() {
@@ -48,11 +50,11 @@ public class Reptil extends Animal {
         this.colorEscamas = colorEscamas;
     }
 
-    public double getLargoCola() {
+    public int getLargoCola() {
         return largoCola;
     }
 
-    public void setLargoCola(double largoCola) {
+    public void setLargoCola(int largoCola) {
         this.largoCola = largoCola;
     }
 

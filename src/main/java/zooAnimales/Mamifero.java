@@ -10,7 +10,9 @@ public class Mamifero extends Animal {
     private int patas;
 
     public Mamifero() {
-        super("", 0, "", "");
+        super();
+        listado.add(this);
+        totalMamiferos++;
     }
 
     public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
@@ -23,6 +25,11 @@ public class Mamifero extends Animal {
 
     public static int cantidadMamiferos() {
         return listado.size();
+    }
+
+    @Override
+    public String movimiento() {
+        return "desplazarse";
     }
 
     public static Mamifero crearCaballo(String nombre, int edad, String genero) {

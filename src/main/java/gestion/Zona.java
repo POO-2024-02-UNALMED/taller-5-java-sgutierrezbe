@@ -20,6 +20,12 @@ public class Zona {
         this.animales = new ArrayList<>();
     }
 
+    public Zona(String nombre, Zoologico zoo) {
+        this.nombre = nombre;
+        this.zoo = zoo;
+        this.animales = new ArrayList<>();
+    }
+
     public void agregarAnimal(Animal animal) {
         this.animales.add(animal);
     }
