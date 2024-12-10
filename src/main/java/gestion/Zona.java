@@ -6,7 +6,7 @@ import java.util.List;
 public class Zona {
     private String nombre;
     private List<Animal> animales;
-    private Zoologico zoo; // Atributo adicional para la relación bidireccional
+    private Zoologico zoo; 
 
     public Zona(String nombre) {
         this.nombre = nombre;

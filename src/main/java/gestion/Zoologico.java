@@ -15,7 +15,7 @@ public class Zoologico {
     }
 
     public void agregarZona(Zona zona) {
-        zona.setZoo(this); // Establecer la relación bidireccional
+        zona.setZoo(this); 
         this.zonas.add(zona);
     }
 
