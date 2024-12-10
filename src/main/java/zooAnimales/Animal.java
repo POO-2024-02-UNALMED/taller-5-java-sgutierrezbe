@@ -1,5 +1,7 @@
 package zooAnimales;
 
+import gestion.Zona;
+
 public class Animal {
     protected static int totalAnimales = 0;
     protected static int totalMamiferos = 0;
