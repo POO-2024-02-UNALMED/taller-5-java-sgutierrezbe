@@ -15,7 +15,7 @@ public class Ave extends Animal {
     }
 
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-        super(nombre, edad, habitat, genero);
+        super(nombre, edad, habitat, genero); // Updated spelling
         this.colorPlumas = colorPlumas;
         listado.add(this);
         totalAves++;

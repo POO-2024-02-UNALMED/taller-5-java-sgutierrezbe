@@ -12,22 +12,22 @@ public class Animal {
 
     private String nombre;
     private int edad;
-    private String habitad;
+    private String habitat; // Updated spelling
     private String genero;
     private Zona[] zonas;
 
     public Animal() {
         this.nombre = null;
         this.edad = 0;
-        this.habitad = null;
+        this.habitat = null; // Updated spelling
         this.genero = null;
         totalAnimales++;
     }
 
-    public Animal(String nombre, int edad, String habitad, String genero) {
+    public Animal(String nombre, int edad, String habitat, String genero) {
         this.nombre = nombre;
         this.edad = edad;
-        this.habitad = habitad;
+        this.habitat = habitat; // Updated spelling
         this.genero = genero;
         totalAnimales++;
     }
@@ -60,12 +60,12 @@ public class Animal {
         this.edad = edad;
     }
 
-    public String getHabitad() {
-        return habitad;
+    public String getHabitat() { // Updated spelling
+        return habitat; // Updated spelling
     }
 
-    public void setHabitad(String habitad) {
-        this.habitad = habitad;
+    public void setHabitat(String habitat) { // Updated spelling
+        this.habitat = habitat; // Updated spelling
     }
 
     public String getGenero() {
@@ -90,6 +90,6 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitad + " y mi genero es " + genero;
+        return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero; // Updated spelling
     }
 }
