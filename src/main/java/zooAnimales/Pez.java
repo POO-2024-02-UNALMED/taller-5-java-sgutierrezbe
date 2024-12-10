@@ -16,7 +16,7 @@ public class Pez extends Animal {
     }
 
     public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
-        super(nombre, edad, habitat, genero); // Updated spelling
+        super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
         this.cantidadAletas = cantidadAletas;
         listado.add(this);
@@ -56,13 +56,5 @@ public class Pez extends Animal {
 
     public void setCantidadAletas(int cantidadAletas) {
         this.cantidadAletas = cantidadAletas;
-    }
-
-    public static ArrayList<Pez> getListado() {
-        return listado;
-    }
-
-    public static void setListado(ArrayList<Pez> listado) {
-        Pez.listado = listado;
     }
 }

@@ -16,7 +16,7 @@ public class Mamifero extends Animal {
     }
 
     public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
-        super(nombre, edad, habitat, genero); // Updated spelling
+        super(nombre, edad, habitat, genero);
         this.pelaje = pelaje;
         this.patas = patas;
         listado.add(this);
@@ -56,13 +56,5 @@ public class Mamifero extends Animal {
 
     public void setPatas(int patas) {
         this.patas = patas;
-    }
-
-    public static ArrayList<Mamifero> getListado() {
-        return listado;
-    }
-
-    public static void setListado(ArrayList<Mamifero> listado) {
-        Mamifero.listado = listado;
     }
 }

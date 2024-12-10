@@ -16,7 +16,7 @@ public class Reptil extends Animal {
     }
 
     public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
-        super(nombre, edad, habitat, genero); // Updated spelling
+        super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
         listado.add(this);
@@ -56,13 +56,5 @@ public class Reptil extends Animal {
 
     public void setLargoCola(int largoCola) {
         this.largoCola = largoCola;
-    }
-
-    public static ArrayList<Reptil> getListado() {
-        return listado;
-    }
-
-    public static void setListado(ArrayList<Reptil> listado) {
-        Reptil.listado = listado;
     }
 }
