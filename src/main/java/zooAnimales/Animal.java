@@ -84,7 +84,7 @@ public class Animal {
     public String toString() {
         String base = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitad + " y mi genero es " + genero;
         if (zonas != null && zonas.length > 0) {
-            Zona zona = zonas[0]; 
+            Zona zona = zonas[0]; // Asumimos que el animal está en la primera zona de la lista
             if (zona != null) {
                 base += ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre() + ".";
             }
